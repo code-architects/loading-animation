@@ -1,0 +1,52 @@
+body{
+    background: #191102;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background: #191102;
+    border-radius: 50%;
+    
+}
+.gradient {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+    background: linear-gradient(to right, #ff0000, #CFDB24, #18F58E , #524ABD, #CB1AD1);
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+p{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial;
+    animation: rotatetext 1s linear infinite;
+}
+@keyframes rotatetext {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
